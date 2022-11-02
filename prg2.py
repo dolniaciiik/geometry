@@ -72,7 +72,16 @@ def kuzel():
     print ("Obsah kužele je",S) 
 
 #koule
-# 
+# Špičák, 2022, CC BY-SA
+def koule():
+    print ("Výtej v programu pro výpočet objemu a povrchu koule v centimetrech krychlových a čtverečních")
+    while True:
+        r = int (input("zadej r:"))
+        if r > 0:
+            break
+        else:
+            print ("zadal jsi nepravdivou hodnotu, r nemůže být menší než nula")
+    print ("Povrch koule je:", 4 * 3.1416 * r * r, "cm2" "   Objem koule je", 4/3 * 3.1416 * r * r * r, "cm3" )
 
 #komoly jehlan
 #
@@ -180,6 +189,33 @@ def cosinus():
 
 #tangens
 # Pokorný, 2022, CC BY-SA
+def tangens():
+    import math
+
+    print("Výtejte v programu na výpočet Tangensu")
+    print("Vytvořil Vít Pokorný 2022")
+
+    while True:
+        A = input("Zadejte Deg pokud chcete zadávat ve stupních, zadejt Rad pokud chcete zadávat v radiánech ")
+        if A == "Deg" or A == "Rad":
+            break
+        else:
+            print("Neplatná hodnota")
+    while True:
+        X = int(input("Zadejte vstupní hodnotu: "))
+        if A == "Deg":
+            try:
+                print("Výsledek je: ", round(math.tan(math.radians(X)), 3))
+                break
+            except ValueError or ZeroDivisionError:
+                print("neplatná hodnota")
+        else:
+            try:
+                print("Výsledek je: ", round(math.tan(X), 3))
+                break
+            except ValueError or ZeroDivisionError:
+                print("neplatná hodnota")
+    print("Konec")
 
 #kalkulacka - kotangens
 # Dolniak, 2022, CC BY-SA
@@ -275,7 +311,7 @@ match a:
     case "4":
         kuzel()
     case "5":
-        pass
+        koule()
     case "6":
         pass
     case "7":
