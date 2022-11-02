@@ -23,7 +23,19 @@ vyber teleso:
 '''
 
 #krychle
-#
+# Suchopar, 2022, CC BY-SA
+def krychle():
+    print ("Vítej v programu na výpočet objemu a obsahu krychle")
+    while True:
+        a = int(input("Zadej stranu a v cm "))
+        if a > 0:
+            break 
+        else: 
+            print ("Neplatná hodnota")
+    S = (6*a*a)
+    print ("Obsah je", S)
+    V = (a*a*a)
+    print ("Objem je", V)
 
 #kvadr
 # Dubal, 2022, CC BY-SA
@@ -255,7 +267,7 @@ print(msg)
 a = input("vyber: ")
 match a:
     case "1":
-        pass
+        krychle()
     case "2":
         pass
     case "3":
