@@ -162,6 +162,47 @@ def komoly_kuzel():
 
 #trojboky jehlan
 # Jedinák, 2022, CC BY-SA
+def troj_jehl():
+    print("vytej v programu na vypocet povrchu a objemu rovnostraneho trojstraneho jehlanu")
+    rozhodnuti = int(input("napis 1 pokud chces pocitat obsah napis 2 pokud chces pocitat objem"))
+    if (rozhodnuti == 1):
+        while True:
+            strana = int(input("zadej velikost hrany v cm"))
+            if (strana > 0):
+                break
+            else:
+                print("zadal jsi neplatnou hodnotu")  
+        while True:
+            vyska = int(input("zadej vysku trojuhelniku"))
+            if (vyska > 0):
+                break
+            else:
+                print("zadal jsi neplatnou hodnotu")
+        celypovrch1 = strana * vyska
+        celypovrch2 = celypovrch1 / 2
+        vysledekpovrchu = celypovrch2 * 4
+        print(vysledekpovrchu)
+    elif (rozhodnuti == 2):
+        while True:
+            strana = int(input("zadej velikost hrany v cm"))
+            if (strana > 0):
+                break
+            else:
+                print("zadal jsi neplatnou hodnotu")
+        while True:
+            vyska = int(input("zadej vysku trojuhelniku"))
+            if (strana > 0):
+                break
+            else:
+                print("zadal jsi neplatnou hodnotu")
+        necelyobsahpodstavy = strana * vyska
+        obsahpodstavy = necelyobsahpodstavy / 2
+        obsahpodstavy1 = obsahpodstavy / 3
+        necelyobjem = obsahpodstavy1 * vyska
+        print(necelyobjem)
+    else:
+        print("zadal jsi spatnou hodnotu")
+            
 
 #sinus
 
