@@ -255,6 +255,27 @@ def troj_jehl():
             
 
 #sinus
+def sinus():
+    print("Vítejte v programu na výpočet Sinus.")
+    print("Vytvořil Ondra Šejstal")
+
+    while True:
+        sin1 = input("Buť zadejte S pokud chcete zadávat ve stupních, nebo zadejte R pokud chcete zadávat v radiánech: ")
+        if sin1=="S" or sin1=="R":
+            if sin1=="S":
+                try:
+                    x = float(input("Zadejte hodnotu x: "))
+                    print("Výseldek je: ",round(math.sin(math.radians(x)),3))
+                    break
+                except ValueError:
+                    print("zadejte číselnou hodnotu")  
+            else:
+                try:
+                    x = float(input("Zadejte hodnotu x: "))
+                    print("Výseldek je: ",math.sin(x))
+                    break
+                except ValueError:
+                    print("zadejte číselnou hodnotu")
 
 #kalkulacka - kosinus
 # Hasilik, 2022, CC BY-SA
@@ -395,7 +416,7 @@ match a:
     case "1":
         krychle()
     case "2":
-        pass
+        kvadr()
     case "3":
         ctryb_jehlan()
     case "4":
@@ -411,7 +432,7 @@ match a:
     case "9":
         troj_jehl()
     case '10':
-        pass
+        sinus()
     case '11':
         cosinus()
     case '12':
