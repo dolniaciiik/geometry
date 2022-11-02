@@ -38,7 +38,38 @@ def krychle():
     print ("Objem je", V)
 
 #kvadr
-# Dubal, 2022, CC BY-SA
+# Dlubal, 2022, CC BY-SA
+def kvadr():
+    print("Vítej v programu na výpočet obsahu a objemu kvádru " ) 
+    while True:
+        a = int(input("Zadej délku strany a v cm " ))
+        if a >0:
+            break
+        else:
+            print("Neplatná hodnota")
+    while True:
+        b = int(input("Zadej délku strany b v cm " ))
+        if b >0:
+            break
+        else:
+            print("Neplatná hodnota " )
+    while True:
+        c = (input("Napiš zda chceš S nebo V " ))
+        if c == "S" or c == "V":
+            break
+        else:
+            print("Neplatná hodnota " )
+    while True:
+        if c == "V":
+            break
+        else:
+            S = (a*2+a*b*4)
+            print("Obsah kvádru je:", S)
+            break
+
+V = (a*a*b)
+print("Objem kvádru je:", V)
+print("gg by Dubaj")
 
 #ctyrboky jehlan
 # Vurma, 2022, CC BY-SA
