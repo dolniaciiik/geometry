@@ -67,9 +67,9 @@ def kvadr():
             print("Obsah kvádru je:", S)
             break
 
-V = (a*a*b)
-print("Objem kvádru je:", V)
-print("gg by Dubaj")
+    V = (a*a*b)
+    print("Objem kvádru je:", V)
+    print("gg by Dubaj")
 
 #ctyrboky jehlan
 # Vurma, 2022, CC BY-SA
