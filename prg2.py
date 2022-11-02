@@ -42,6 +42,25 @@ def krychle():
 
 #ctyrboky jehlan
 # Vurma, 2022, CC BY-SA
+def ctryb_jehlan():
+    print("Vítej v programu na vypočítání obsahu a objemu")
+    while True:
+        A = int(input("Zadej stranu A u čtverce v cm:"))
+        if A > 0:
+            break
+        else:
+            print("Špatná hodnota demente!")
+    Sp = (A*A)
+    print("Obsah podstavy je:", Sp)
+    while True:
+        B = int(input("Zadej délku výšky pro vypočítání objemu v cm:"))
+        if B > 0:
+            break
+        else:
+            print("Špatná hodnota demente!")
+    V = (B)
+    VH = (Sp*V/3)
+    print("Objem hranolu je:", VH)
 
 #kalkulacka - kuzel
 # Luu, 2022, CC BY-SA
@@ -300,7 +319,6 @@ def calc_cotg():
         else:
             print("Zadejte D/R!")
 
-
 #kalkulacka - objem a obsah hexapyramid
 # Stembera, 2022, CC BY-SA
 def hexapyramid():
@@ -348,7 +366,7 @@ match a:
     case "2":
         pass
     case "3":
-        pass
+        ctryb_jehlan()
     case "4":
         kuzel()
     case "5":
@@ -356,17 +374,17 @@ match a:
     case "6":
         pass
     case "7":
-        pass
+        valec()
     case "8":
         komoly_kuzel()
     case "9":
-        pass
+        troj_jehl()
     case '10':
         pass
     case '11':
         cosinus()
     case '12':
-        pass
+        tangens()
     case '13':
         calc_cotg()
     case '14':
