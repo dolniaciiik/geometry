@@ -253,7 +253,6 @@ def troj_jehl():
     else:
         print("zadal jsi spatnou hodnotu")
             
-
 #sinus
 def sinus():
     print("Vítejte v programu na výpočet Sinus.")
