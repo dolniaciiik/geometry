@@ -394,26 +394,6 @@ def calc_cotg():
     else:
         print('neco se rozbilo, nesnaz se to opravit')
 
-
-    while True:
-        var1 = input("Buť zadejte D pokud chcete zadávat ve stupních, nebo zadejte R pokud chcete zadávat v radiánech: ")
-        if var1 == "D":
-            try:
-                x = int(input("Zadejte hodnotu x: "))
-                print("Výseldek je: ",round(math.cos(math.radians(x)),3))
-                break
-            except ValueError:
-                print("zadejte číselnou hodnotu")    
-        elif var1 == "R":
-            try:
-                x = int(input("Zadejte hodnotu x: "))
-                print("Výseldek je: ",round(math.cos(x),2))
-                break
-            except ValueError:
-                print("zadejte číselnou hodnotu") 
-        else:
-            print("Zadejte D/R!")
-
 #kalkulacka - objem a obsah hexapyramid
 # Stembera, 2022, CC BY-SA
 def hexapyramid():
