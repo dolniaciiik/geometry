@@ -134,7 +134,51 @@ def koule():
     print ("Povrch koule je:", 4 * 3.1416 * r * r, "cm2" "   Objem koule je", 4/3 * 3.1416 * r * r * r, "cm3" )
 
 #komoly jehlan
-#
+# Kusý, 2022, CC BY-SA
+def k_jehlan():
+    while True:
+        s1 = int(input("zadejte vrchní stranu s1 :"))
+        if s1 > 0 :
+            break
+        else:
+            print("zadal jsi číslo menší jak nula")
+    while True:
+    
+        s2 = int(input("stranu podstavy s2 :"))
+        if s2 > 0 :
+            break
+        else:
+            print("zadal jsi číslo menší jak nula")
+    while True:
+        v = int(input("výšku v :"))
+        if v > 0 :
+            break
+        else:
+            print("zadal jsi číslo menší jak nula")
+    S= (s1+s2*v)
+    print("povrch komolého jehlanu je: ", str(V), "cm3 ")
+
+    while True:
+        s1 = int(input("zadejte vrchní stranu s1 :"))
+        if s1 > 0 :
+            break
+        else:
+            print("zadal jsi číslo menší jak nula")
+    while True:
+    
+        s2 = int(input("stranu podstavy s2 :"))
+        if s2 > 0 :
+            break
+        else:
+            print("zadal jsi číslo menší jak nula")
+    while True:
+        v = int(input("výšku v :"))
+        if v > 0 :
+            break
+        else:
+            print("zadal jsi číslo menší jak nula")
+    V= 0.33*(s1+s2+ math.sqrt(s1+s2))
+    print("objem komolého jehlanu je: ", str(V), "cm3 ")
 
 #valec
 # Slavík, 2022, CC BY-SA
