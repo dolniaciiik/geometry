@@ -467,7 +467,7 @@ match a:
     case "5":
         koule()
     case "6":
-        pass
+        komoly_kuzel()
     case "7":
         valec()
     case "8":
