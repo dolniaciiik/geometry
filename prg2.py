@@ -19,7 +19,7 @@ vyber teleso:
         11 cos
         12 tan
         13 cot
-        14 to co ma flora
+        14 hexapyramid
 '''
 
 #krychle
