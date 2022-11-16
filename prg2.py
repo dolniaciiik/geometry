@@ -25,73 +25,70 @@ vyber teleso:
 #krychle
 # Suchopar, 2022, CC BY-SA
 def krychle():
-    print ("Vítej v programu na výpočet objemu a obsahu krychle")
     while True:
         a = int(input("Zadej stranu a v cm "))
         if a > 0:
             break 
         else: 
-            print ("Neplatná hodnota")
+            print ("Neplatná hodnota!")
     S = (6*a*a)
-    print ("Obsah je", S)
     V = (a*a*a)
-    print ("Objem je", V)
+    print ("Obsah je {}cm^2".format(S))
+    print ("Objem je {}cm^3".format(V))
 
 #kvadr
 # Dlubal, 2022, CC BY-SA
 def kvadr():
-    print("Vítej v programu na výpočet obsahu a objemu kvádru " ) 
     while True:
-        a = int(input("Zadej délku strany a v cm " ))
+        a = int(input("Zadej délku strany a v cm: " ))
         if a >0:
             break
         else:
             print("Neplatná hodnota")
     while True:
-        b = int(input("Zadej délku strany b v cm " ))
+        b = int(input("Zadej délku strany b v cm: " ))
         if b >0:
             break
         else:
-            print("Neplatná hodnota " )
+            print("Neplatná hodnota!" )
     while True:
-        c = (input("Napiš zda chceš S nebo V " ))
+        c = (input("Napiš zda chceš S nebo V: " ))
         if c == "S" or c == "V":
             break
         else:
-            print("Neplatná hodnota " )
+            print("Neplatná hodnota!" )
     while True:
         if c == "V":
             break
         else:
             S = (a*2+a*b*4)
-            print("Obsah kvádru je:", S)
+            print("Obsah kvádru je: {}cm^2".format(S))
             break
 
     V = (a*a*b)
-    print("Objem kvádru je:", V)
+    print("Objem kvádru je: {}cm^3".format(V))
     print("gg by Dubaj")
 
 #ctyrboky jehlan
 # Vurma, 2022, CC BY-SA
 def ctryb_jehlan():
-    print("Vítej v programu na vypočítání obsahu a objemu")
     while True:
-        A = int(input("Zadej stranu A u čtverce v cm:"))
+        A = int(input("Zadej stranu a u čtverce v cm: "))
         if A > 0:
             break
         else:
-            print("Špatná hodnota demente!")
+            print("Špatná hodnota frajere!")
     Sp = (A*A)
-    print("Obsah podstavy je:", Sp)
+    print("Obsah podstavy je: {}cm^2".format(Sp))
     while True:
-        B = int(input("Zadej délku výšky pro vypočítání objemu v cm:"))
+        B = int(input("Zadej délku výšky pro vypočítání objemu v cm: "))
         if B > 0:
             break
         else:
-            print("Špatná hodnota demente!")
+            print("Špatná hodnota frajere!")
     V = (B)
     VH = (Sp*V/3)
-    print("Objem hranolu je:", VH)
+    print("Objem hranolu je: {}cm^3".format(VH))
 
 #kalkulacka - kuzel
 # Luu, 2022, CC BY-SA
@@ -102,36 +99,38 @@ def kuzel():
         if 0<r:
             break
         else:
-            print("Zadej kladné číslo")
+            print("Zadej kladné číslo!")
     while True:
         v=int(input("Zadej výšku kužele v cm: "))
         if 0<v:
             break
         else:
-            print("Zadej kladné číslo")
+            print("Zadej kladné číslo!")
     V=(math.pi*r**2*v)/3
-    print("Objem kužele je",V)
-
+    print("Objem kužele je {}cm^3".format(V))
     while True:
+
         s=int(input("Zadej stranu pláště kužele v cm: "))
         if 0<s:
             break
         else:
-            print("Zadej kladné číslo")
+            print("Zadej kladné číslo!")
     S=math.pi*r*(r+s)
-    print ("Obsah kužele je",S) 
+    print ("Obsah kužele je {}cm^2".format(S))
 
 #koule
 # Špičák, 2022, CC BY-SA
 def koule():
-    print ("Výtej v programu pro výpočet objemu a povrchu koule v centimetrech krychlových a čtverečních")
     while True:
-        r = int (input("zadej r:"))
+        r = int (input("zadej r: "))
         if r > 0:
             break
         else:
-            print ("zadal jsi nepravdivou hodnotu, r nemůže být menší než nula")
-    print ("Povrch koule je:", 4 * 3.1416 * r * r, "cm2" "   Objem koule je", 4/3 * 3.1416 * r * r * r, "cm3" )
+            print ("zadal jsi nepravdivou hodnotu, r nemůže být menší než nula!")
+
+    S = 4*math.pi*r**2
+    V = 4/3*math.pi*r**3
+    print ("Povrch koule je {}cm^2".format(S),'\n', "Objem koule je {}cm^3".format(V))
 
 #komoly jehlan
 # Kusý, 2022, CC BY-SA
@@ -189,70 +188,65 @@ def valec():
             if r > 0:
                 break
             else:
-                print("hodnota nesmí být záporná")
+                print("hodnota nesmí být záporná!")
     while True:
             v = int(input("zadej výšku válce v cm:")) #výška
             if v > 0 :
                 break
             else:
-                print ("hodnota nesmí být záporná")
+                print ("hodnota nesmí být záporná!")
     π = (math.pi) #pí
     V = (π*r*r*v)
-    print ("objem válce je:", V ,"cm³")
-
+    print ("objem válce je: {}cm^3".format(V))
     print("Výpočet obsahu válce")
     while True:
             r = int(input("zadej poloměr válce v cm:"))
             if r > 0:
                 break
             else:
-                print("hodnota nesmí být záporná")
+                print("hodnota nesmí být záporná!")
     while True:
             v = int(input("zadej výšku válce v cm:"))
             if v > 0:
                 break
             else:
-                print("hodnota nesmí být záporná")
+                print("hodnota nesmí být záporná!")
     π = (math.pi)
     Sp = (π*r*r)
     Spl = (2*π*r*v)
     S = (2*Sp+Spl)
-    print ("obsah válce je:", S ,"cm²")
+    print ("obsah válce je: {}cm^2".format(S))
 
 #komoly kuzel
 # Paďourek, 2022, CC BY-SA
 def komoly_kuzel():
-    print("vytej v programu kde se pocita objem a obsah")
-    print("vytvoril matej padourek v roce 2022")
-    
     while True:
-        hodnotar1= int(input("zadej hodnotu ktera ma byt dosazena za podstavu 1 :"))
-        if hodnotar1 > 0:
+        r1= int(input("zadej hodnotu ktera ma byt dosazena za podstavu 1 :"))
+        if r1 > 0:
             break
         else:
-            print("zadana hodnota je nespravna")
+            print("zadana hodnota je nespravna!")
         
     while True:        
-        hodnotav= int(input("zadej hodnotu ktera ma byt dosazena za v :"))
-        if hodnotav > 0:
+        v= int(input("zadej hodnotu ktera ma byt dosazena za v :"))
+        if v > 0:
             break
         else:
-            print("zadana hodnota je nespravna")
+            print("zadana hodnota je nespravna!")
         
     while True:        
-        hodnotar2= int(input("zadej hodnotu ktera ma byt dosazena za podstavu2 :"))
-        if hodnotar2 > 0:
+        r2= int(input("zadej hodnotu ktera ma byt dosazena za podstavu2 :"))
+        if r2 > 0:
             break
         else:
-            print("zadana hodnota je nespavna")
+            print("zadana hodnota je nespavna!")
 
     pi = math.pi
 
-    V=pi* hodnotav/3*(hodnotar1**2 + hodnotar1*hodnotar2 + hodnotar2**2)
-
-    S= pi * hodnotar1**2 + pi * hodnotar2**2 + pi*(hodnotar1+hodnotar2)*math.sqrt(hodnotav**2+(hodnotar1-hodnotar2)**2)
-    print("Objem  " , round(V,2))
-    print("Povrch " , round(S,2))
+    V=pi* v/3*(r1**2 + r1*r2 + r2**2)
+    S= pi * r1**2 + pi *r2**2 + pi*(r1+r2)*math.sqrt(v**2+(r1-r2)**2)
+    print("Objem je {}cm^3".format(round(V,2)))
+    print("Povrch je {}cm^2".format(round(S,2)))
 
 #trojboky jehlan
 # Jedinák, 2022, CC BY-SA
